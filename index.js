@@ -1,5 +1,23 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+//converted string into an array
+  const arrValue = word.split (''); //   
+  
+//  reversed the array values (essentially reverse string) 
+const reveArrVal = arrValue.reverse();   
+  
+//  mesh the array values into the string  
+const revWord = reveArrVal.join('');  
+  
+if (word == revWord)  
+{  
+alert('It is a Palindrome '); 
+}  
+else {  
+alert (' It is not a Palindrome' ); // if the condition is not true.  
+}  
+const string = prompt( ' Enter the string to check Palindrome ');  
+const value = isPalindrome (word); // call the function to apply functionality to user input 
+console.log(value);  
 }
 
 /* 
